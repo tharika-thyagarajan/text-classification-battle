@@ -1,0 +1,75 @@
+Text Classification Battle
+
+Project Overview
+
+This project compares four machine learning algorithms for text classification: Decision Tree, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Naive Bayes.
+
+The models are implemented using Python in Google Colab and evaluated using the same dataset and TF-IDF feature representation.
+
+Dataset
+
+The project uses the 20 Newsgroups dataset from Scikit-learn.
+
+The following four categories are selected:
+
+* comp.graphics
+* rec.sport.baseball
+* sci.med
+* talk.politics.misc
+
+The dataset contains labelled text documents belonging to these categories.
+
+Algorithms Implemented
+
+1. Decision Tree
+2. K-Nearest Neighbors (KNN)
+3. Support Vector Machine (SVM)
+4. Multinomial Naive Bayes
+
+Methodology
+
+1. Load the 20 Newsgroups dataset and select four categories.
+2. Preprocess the text using TF-IDF vectorization.
+3. Split the dataset into training and testing sets.
+4. Train all four classification models using the same dataset and feature representation.
+5. Evaluate the models using Accuracy, Precision, Recall, and F1-score.
+6. Compare the model performances using a table and graph.
+7. Analyse the confusion matrix of the best-performing model.
+8. Conduct a what-if experiment by changing the SVM regularisation parameter C.
+9. Identify the best-performing model based on the recorded experimental results.
+
+Model Comparison Results
+
+The following results were recorded in the experiment.
+
+Algorithm	Accuracy	Precision	Recall	F1-score
+Decision Tree	75.34%	75.38%	75.34%	75.26%
+KNN	88.15%	88.60%	88.15%	88.13%
+SVM	92.01%	92.05%	92.01%	91.98%
+Naive Bayes	91.05%	91.07%	91.05%	91.00%
+
+Best-performing model: SVM
+
+Based on the recorded results, SVM achieved the highest accuracy and F1-score among the four classifiers.
+
+What-If Experiment
+
+A what-if experiment was conducted by changing the SVM regularisation parameter C.
+
+The results were compared using the same evaluation metrics to observe the effect of the parameter change on classification performance.
+
+Repository Contents
+
+* text_classification_battle.ipynb — Google Colab notebook containing the implementation and experiments.
+* model_comparison.csv — Comparative evaluation results for all four models.
+* model_comparison.png — Graph comparing model performance.
+* best_model_confusion_matrix.csv — Confusion matrix of the best-performing model.
+* svm_what_if_results.csv — Results of the SVM what-if experiment.
+
+Conclusion
+
+This project compares Decision Tree, KNN, SVM, and Naive Bayes for text classification using TF-IDF features.
+
+Based on the recorded experimental results, SVM achieved the best overall performance, with an accuracy of 92.01% and an F1-score of 91.98%.
+
+The project demonstrates the comparison of machine learning classifiers using standard evaluation metrics, confusion matrix analysis, and a what-if experiment.
